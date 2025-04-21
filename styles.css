@@ -1,0 +1,339 @@
+/* Global */
+body {
+    margin: 0;
+    font-family: Antonio;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fffefc;
+    color: black;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.panier-icone {
+    
+    width: 30px;
+    height: 30px;
+    object-fit: contain; 
+    cursor: pointer; 
+}
+
+/*page d'accueil*/
+.fond {
+    margin-top: 0px;
+	background: url('fond.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 200px 20px;
+}
+.fond h1 {
+	font-size:50px;
+}
+
+.bouton_accueil {
+    margin-top: 40px;
+    background: #000;
+    color : white;	
+	border-radius: 2px;
+    padding: 10px 20px;
+    cursor: pointer;
+	font-size: 18px;
+	text-decoration: none;
+}
+	
+
+.titre-produits-accueil {
+	text-align: center;
+	
+}
+
+
+
+.principal_produits_accueil {
+    display: flex;
+    justify-content: center; /* Centre les items horizontalement */
+    align-items: center;     /* Centre les items verticalement */
+    gap: 20px;
+    padding: 20px;
+	flex-wrap: wrap;
+}
+
+	
+
+
+.produits_accueil {
+    gap: 20px;
+    padding: 10px;
+    text-align: center;
+	
+}
+
+
+.produits_accueil img {
+    width: auto;
+    height: 450px; 
+    border-radius: 3px; 
+}
+
+
+.bouton_arrondi {
+    margin-top: 40px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #333;
+    text-decoration: none;
+    border: 2px;
+	border-color: #333;
+	border-style: solid;
+    border-radius: 25px;
+}
+
+.bouton_arrondi:hover {
+    background: #333;
+    color: white;	
+}
+
+/* galerie produits */
+.banniere-galerie {
+    margin-top: 0px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+    color: white;
+    padding: 150px 20px;
+}
+
+
+
+
+
+/* details produits */
+.contenu-details {
+    padding: 40px 5%;
+	flex-wrap: wrap;   /*si l'ecran est trop petit les element passe a la ligne */
+	justify-content: center;
+	display: flex;
+    max-width: 1200px;
+    gap: 40px;
+	margin: auto;
+}
+
+.image-produit {
+    flex: 1 1 300px;
+    max-width: 500px;
+}
+
+.image-produit img {
+    width: 100%;
+    border-radius: 2px;
+}
+
+.info-produit {
+    max-width: 500px;
+	flex: 1 1 300px;
+	padding: 0 20px ;
+}
+
+.prix-details {
+    font-size: 15px;
+    
+}
+
+
+.option-livraison-details {
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+}
+
+
+.information-sur-le-produit {
+	margin-top: 35px;
+
+}
+
+
+
+.avis-clients {
+    background-color: #f8f8f8;
+    padding: 30px;
+    margin: 40px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.avis-clients h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.statistiques-etoiles p {
+    margin: 5px 0;
+}
+
+.liste-avis p {
+    margin: 10px 0;
+    border-bottom: 1px;
+	border-bottom-color: #ddd;
+	border-bottom-style: solid;
+    padding-bottom: 5px;
+}
+
+
+
+
+/* Panier */
+.contenu-page-panier {
+	padding-bottom: 20px; /* Évite que le contenu touche trop le footer */
+}
+
+
+.panier {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre les éléments horizontalement */
+    gap: 20px; /* Espacement entre le panier et le récapitulatif */
+    padding: 20px;
+    width: 100%;
+	
+
+	
+}
+
+
+
+.contenu-panier {
+	width: 55%;
+    background-color: #fff;
+    padding: 20px;
+	border-radius: 3px;
+	box-shadow: 0 0 6px #818181;
+	background-color: #fffefc;
+}
+
+.contenu-panier h2 {
+	Line-Height: 24px;
+	size: 20px;
+	color: #212529;
+	
+}
+	
+
+.resume-final {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre les éléments horizontalement */
+	text-align:left;
+    gap: 10px; /* Espacement entre le panier et le récapitulatif */
+    padding: 20px;
+    width: 100%;
+}
+
+
+
+
+
+/*A Propos */
+
+.a-propos {
+    text-align: center;
+    font-size: 18px;
+
+}
+
+.mission,
+.identite,
+.valeur,
+.test-chaussette,
+.contact {
+    padding: 50px 20px;
+    margin: auto;
+}
+
+.mission h2,
+.identite h2,
+.valeur h2,
+.test-chaussette h2,
+.contact h2 {
+    color: #333;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.valeur ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.valeur li {
+    font-size: 20px;
+    padding: 8px 35%;
+    text-align: left;
+}
+
+
+.contact img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.contact a {
+    color: #8d6e63;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+/* Footer */
+footer {
+    margin-top: 20px;
+	background: #f0f0f0;
+    color: black;
+    text-align: center;
+    padding: 20px;
+
+}
+
+/* Liens sociaux */
+footer .liens-sociaux a {
+    margin: 0 10px;
+    color: black; /* Couleur par défaut en blanc */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Animation douce pour le changement de couleur */
+}
